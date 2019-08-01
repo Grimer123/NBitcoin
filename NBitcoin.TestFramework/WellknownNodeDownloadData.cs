@@ -988,6 +988,29 @@ namespace NBitcoin.Tests
 		/// Using Stratis C# full node.
 		/// Should be updated to use official release once it is deployed.
 		/// </summary>
+		
+		public class MonkeyNodeDownloadData
+		{
+			public NodeDownloadData v2_3_0 = new NodeDownloadData()
+			{
+				Version = "2.3.0",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/MONKEYPROJECT/MonkeyV2/releases/download/v{0}/monkey-{0}-win64.zip",
+					Archive = "monkey-{0}-win64.zip",
+					Executable = "monkey-{0}/bin/monkeyd.exe",
+					Hash = "CB9FB2A47ABA278224FD11DDBB27E2D5C2FCA28A6B1E67E7C021A8647C60D1E6"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/MONKEYPROJECT/MonkeyV2/releases/download/v{0}/monkey-{0}-x86_64-linux-gui.tar.gz",
+					Archive = "monkey-{0}-x86_64-linux-gui.tar.gz",
+					Executable = "monkey-{0}/bin/monkeyd",
+					Hash = "43235384536991D7C900D51E2EFBB63574CAA83A791FBFA0963F118FF2B7CC3E"
+				},
+			};
+		}
+		
 		public class StratisNodeDownloadData
 		{
 			public NodeDownloadData v3_0_0 = new NodeDownloadData()
@@ -1142,6 +1165,11 @@ namespace NBitcoin.Tests
 		{
 			get; set;
 		} = new StratisNodeDownloadData();
+		
+		public static MonkeyNodeDownloadData Monkey
+		{
+			get; set;
+		} = new MonkeyNodeDownloadData();
 
 		public bool UseSectionInConfigFile { get; private set; }
 		public string AdditionalRegtestConfig { get; private set; }
