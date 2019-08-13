@@ -962,6 +962,28 @@ namespace NBitcoin.Tests
             };
         }
 
+		public class FeirmNodeDownloadData
+		{
+			public NodeDownloadData v1_4_0 = new NodeDownloadData()
+			{
+				Version = "1.4.0",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/feirm/feirm/releases/download/v{0}/feirm-{0}-win64.zip",
+					Archive = "feirm-{0}-win64.zip",
+					Executable = "feirm-{0}/bin/feirmd.exe",
+					Hash = "7830108F486422307C201B983C3E01BF755FB0687837B081A64B769033DF5C20"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/feirm/feirm/releases/download/v{0}/feirm-{0}-x86_64-linux-gui.tar.gz",
+					Archive = "feirm-{0}-x86_64-linux-gui.tar.gz",
+					Executable = "feirm-{0}/bin/monkeyd",
+					Hash = "B8EE08C4672BD886159B57D4B864EA02861FC6A864F79AA8FF3319B5C6F6A992"
+				},
+			};
+		}
+		
 		public class ChaincoinNodeDownloadData
 		{
 			public NodeDownloadData v0_16_4 = new NodeDownloadData()
@@ -1170,6 +1192,11 @@ namespace NBitcoin.Tests
 		{
 			get; set;
 		} = new MonkeyNodeDownloadData();
+		
+		public static FeirmNodeDownloadData Feirm
+		{
+			get; set;
+		} = new FeirmNodeDownloadData();
 
 		public bool UseSectionInConfigFile { get; private set; }
 		public string AdditionalRegtestConfig { get; private set; }
