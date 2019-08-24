@@ -110,7 +110,7 @@ namespace NBitcoin.Tests
 	}
 	public class NodeBuilder : IDisposable
 	{
-		public static NodeBuilder Create(NodeDownloadData downloadData, Network network = null, [CallerMemberNameAttribute]string caller = null, bool showNodeConsole = false)
+		public static NodeBuilder Create(NodeDownloadData downloadData, Network network = null, [CallerMemberNameAttribute]string caller = null, bool showNodeConsole = true)
 		{
 			network = network ?? Network.RegTest;
 			var isFilePath = downloadData.Version.Length >= 2 && downloadData.Version[1] == ':';
