@@ -170,9 +170,9 @@ namespace NBitcoin.Altcoins
 				ConsensusFactory = MonkeyConsensusFactory.Instance,
 				SupportSegwit = false
 			})
-			.SetBase58Bytes(Base58Type.PUBKEY_ADDRESS, new byte[] { 38 })
-			.SetBase58Bytes(Base58Type.SCRIPT_ADDRESS, new byte[] { 6 })
-			.SetBase58Bytes(Base58Type.SECRET_KEY, new byte[] { 46 })
+			.SetBase58Bytes(Base58Type.PUBKEY_ADDRESS, new byte[] { 127 })
+			.SetBase58Bytes(Base58Type.SCRIPT_ADDRESS, new byte[] { 127 })
+			.SetBase58Bytes(Base58Type.SECRET_KEY, new byte[] { 63 })
 			.SetBase58Bytes(Base58Type.EXT_PUBLIC_KEY, new byte[] { 0x04, 0x88, 0xB2, 0x1E })
 			.SetBase58Bytes(Base58Type.EXT_SECRET_KEY, new byte[] { 0x04, 0x88, 0xAD, 0xE4 })
 			.SetBech32(Bech32Type.WITNESS_PUBKEY_ADDRESS, Encoders.Bech32("monkrt"))
