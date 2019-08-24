@@ -1013,22 +1013,22 @@ namespace NBitcoin.Tests
 		
 		public class MonkeyNodeDownloadData
 		{
-			public NodeDownloadData v2_3_0 = new NodeDownloadData()
+			public NodeDownloadData v2_3_1 = new NodeDownloadData()
 			{
-				Version = "2.3.0",
+				Version = "2.3.1",
 				Windows = new NodeOSDownloadData()
 				{
 					DownloadLink = "https://github.com/MONKEYPROJECT/MonkeyV2/releases/download/v{0}/monkey-{0}-win64.zip",
 					Archive = "monkey-{0}-win64.zip",
 					Executable = "monkey-{0}/bin/monkeyd.exe",
-					Hash = "CB9FB2A47ABA278224FD11DDBB27E2D5C2FCA28A6B1E67E7C021A8647C60D1E6"
+					Hash = "1B5E6D94282D2C122E08960AC9B1A565FCA1FC6E77C6AE70EE06829C91A1B395"
 				},
 				Linux = new NodeOSDownloadData()
 				{
 					DownloadLink = "https://github.com/MONKEYPROJECT/MonkeyV2/releases/download/v{0}/monkey-{0}-x86_64-linux-gui.tar.gz",
 					Archive = "monkey-{0}-x86_64-linux-gui.tar.gz",
 					Executable = "monkey-{0}/bin/monkeyd",
-					Hash = "43235384536991D7C900D51E2EFBB63574CAA83A791FBFA0963F118FF2B7CC3E"
+					Hash = "AB08D41CB014B09607EECCC1E98F3DD66CD8192BA9F8AAB40782516A38F8FB6E"
 				},
 			};
 		}
