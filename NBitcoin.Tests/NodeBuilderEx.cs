@@ -54,8 +54,8 @@ namespace NBitcoin.Tests
 			//var builder = NodeBuilder.Create(NodeDownloadData.Koto.v2_0_0, Altcoins.Koto.Regtest, caller);
 			//var builder = NodeBuilder.Create(NodeDownloadData.Chaincoin.v0_16_4 , Altcoins.AltNetworkSets.Chaincoin.Regtest, caller);
 			//var builder = NodeBuilder.Create(NodeDownloadData.Stratis.v3_0_0, Altcoins.AltNetworkSets.Stratis.Regtest, caller);
-			//var builder = NodeBuilder.Create(NodeDownloadData.Monkey.v2_3_0, Altcoins.AltNetworkSets.Monkey.Mainnet, caller);
-			var builder = NodeBuilder.Create(NodeDownloadData.Feirm.v1_4_0, Altcoins.AltNetworkSets.Feirm.Regtest, caller);
+			var builder = NodeBuilder.Create(NodeDownloadData.Monkey.v2_3_1, Altcoins.AltNetworkSets.Monkey.Regtest, caller);
+			//var builder = NodeBuilder.Create(NodeDownloadData.Feirm.v1_4_0, Altcoins.AltNetworkSets.Feirm.Regtest, caller);
 			return builder;
 		}
 	}
